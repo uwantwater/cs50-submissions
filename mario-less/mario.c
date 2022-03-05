@@ -26,6 +26,6 @@ int main(void)
     {
         n = get_int("Height?\n");
     }
-    while (n < 1 && n > 8);
+    while (n < 1 || n > 8);
     block_height(n);
 }
