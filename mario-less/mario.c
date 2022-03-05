@@ -7,7 +7,7 @@ void block_height(int n)
     {
         for (int j = 0; j <= i; j++)
         {
-            printf("%*s", j, "#");
+            printf("%s", "#");
         }
         printf("\n");
     }
