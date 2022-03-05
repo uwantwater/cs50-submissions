@@ -3,12 +3,14 @@
 
 void block_height(int n)
 {
-    for (int i = 0, i < n, i++);
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 0, j < i, j++);
-        printf("#");
+        for (int j = 0; j <= i; j++)
+        {
+            printf("%*s", j, "#");
+        }
+        printf("\n");
     }
-    printf("\n")
 }
 
 int main(void)
