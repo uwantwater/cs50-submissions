@@ -21,6 +21,11 @@ void block_height(int n)
 
 int main(void)
 {
-    int n = get_int("Height?\n");
+    int n;
+    do
+    {
+        n = get_int("Height?\n");
+    }
+    while (n < 1 && n > 8);
     block_height(n);
 }
