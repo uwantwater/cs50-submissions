@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int block_height(int n)
+void block_height(int n)
 {
     for (int i = 0, i < n, i++);
     {
