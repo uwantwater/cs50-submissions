@@ -5,9 +5,11 @@ void block_height(int n)
 {
     for (int i = 0; i < n; i++)
     {
-            for (int k = n-1; k >= 0; k--)
+            int k = (n-2) - i;
+            while (k >= 0)
             {
                 printf(" ");
+                k = k - 1;
             }
             for (int j = 0; j <= i; j++)
             {
