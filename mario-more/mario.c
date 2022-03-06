@@ -19,7 +19,7 @@ void block_height(int n)
             printf("#");
         }
         //space of one unit between the 2 pyramid blocks
-        printf(" ");
+        printf("  ");
         //for right pyramid block
         for (int j = 0; j <= i; j++)
         {
