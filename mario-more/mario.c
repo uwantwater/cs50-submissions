@@ -18,6 +18,7 @@ void block_height(int n)
         {
             printf("#");
         }
+        
         printf(" ");
         for (int j = 0; j <= i; j++)
         {
