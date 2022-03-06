@@ -3,10 +3,11 @@
 
 void block_height(int n)
 {
-    
+    //for column
     for (int i = 0; i < n; i++)
     {
         int k = (n - 2) - i;
+        //generating required no. of spaces to right align the 
         while (k >= 0)
         {
             printf(" ");
