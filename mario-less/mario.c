@@ -8,7 +8,7 @@ void block_height(int n)
             int k = (n-2) - i;
             while (k >= 0)
             {
-                printf(".");
+                printf(" ");
                 k = k - 1;
             }
             for (int j = 0; j <= i; j++)
