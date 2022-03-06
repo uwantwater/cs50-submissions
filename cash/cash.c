@@ -40,7 +40,7 @@ int get_cents(void)
     int c;
     do
     {
-        c = get_int("How many cents do I owe you?\n");
+        c = get_int("Change owed: ");
     }
     while (c <= 0);
     return c;
