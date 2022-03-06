@@ -10,7 +10,7 @@ int calculate_pennies(int cents);
 int main(void)
 {
     // Ask how many cents the customer is owed
-    int cents = get_cents("How many cents do I owe you?\n");
+    int cents = get_cents();
 
     // Calculate the number of quarters to give the customer
     int quarters = calculate_quarters(cents);
@@ -37,8 +37,8 @@ int main(void)
 
 int get_cents(void)
 {
-    // TODO
-    return 0;
+    int cents_owed = get_int("How many cents do I owe you?\n");
+    return cents_owed;
 }
 
 int calculate_quarters(int cents)
