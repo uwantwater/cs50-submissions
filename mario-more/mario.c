@@ -13,13 +13,14 @@ void block_height(int n)
             printf(" ");
             k = k - 1;
         }
-        //for no. of hashes in one row
+        //for left pyramid block
         for (int j = 0; j <= i; j++)
         {
             printf("#");
         }
-        
+        //space of one unit between the 2 pyramid blocks
         printf(" ");
+        //for right pyramid block
         for (int j = 0; j <= i; j++)
         {
             printf("#");
