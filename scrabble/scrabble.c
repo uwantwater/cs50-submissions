@@ -27,7 +27,7 @@ int compute_score(string word)
     int score;
     for (int i = 0; i <= strlen(word); i++)
     {
-        score = toupper(word[i]) - 64;
+        score = score + (toupper(word[i]) - 64);
     }
     return score;
 }
