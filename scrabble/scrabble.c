@@ -27,5 +27,5 @@ int compute_score(string word)
     {
         int score = toupper(word[i]);
     }
-    return score;
+    return score
 }
