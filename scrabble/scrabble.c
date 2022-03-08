@@ -41,8 +41,10 @@ int compute_score(string word)
         //checking for letters so that the program ignores special characters
         if (toupper(word[i]) >= 'A' && toupper(word[i]) <= 'Z')
         {
-            
-            score = score + POINTS[(toupper(word[i]) - 65)];
+            //convert corresponding character to uppercase and then to its respective index in array POINTS
+            int index = toupper(word[i]) - 65;
+            //add equivalent point(s) of character to score
+            score = score + POINTS[index];
         }
         else
         {
