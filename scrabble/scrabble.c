@@ -23,9 +23,10 @@ int main(void)
 
 int compute_score(string word)
 {
+    int score;
     for (int i = 0; i <= strlen(word); i++)
     {
-        int score = toupper(word[i]);
+        score = toupper(word[i]) - 64;
     }
-    return score
+    return score;
 }
