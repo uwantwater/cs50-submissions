@@ -27,7 +27,7 @@ int compute_score(string word)
     int score = 0;
     for (int i = 0; i < strlen(word); i++)
     {
-        score = score + (toupper(word[i]) - 64);
+        score = score + POINTS[(toupper(word[i]) - 65)];
     }
     return score;
 }
