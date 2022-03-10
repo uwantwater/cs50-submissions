@@ -37,6 +37,7 @@ int main(void)
     }
 }
 
+//convert to uppercase and count ascii characters from A to Z for number of letters
 int letters(string text)
 {
     for (int i = 0, n = strlen(text); i <= n; i++)
@@ -49,6 +50,7 @@ int letters(string text)
     return letterCount;
 }
 
+//count number of fullstops, exclamation and question marks to count number of sentences
 int sentences(string text)
 {
     for (int i = 0, n = strlen(text); i <= n; i++)
@@ -61,6 +63,7 @@ int sentences(string text)
     return sentenceCount;
 }
 
+//count number of spaces and add one to it for number of words
 int words(string text)
 {
     for (int i = 0, n = strlen(text); i <= n; i++)
