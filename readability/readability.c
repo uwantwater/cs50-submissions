@@ -19,11 +19,11 @@ int main(void)
     int l = letters(inputText);
     int w = words(inputText);
     int s = sentences(inputText);
-    int L = l / w * 100;
-    int S = s / w * 100;
+    float L = l / w * 100;
+    float S = s / w * 100;
     float rawIndex = 0.0588 * L - 0.296 * S - 15.8;
     int index = round(rawIndex);
-    printf("%i\n", index);
+    printf("%f\n", L);
 }
 
 int letters(string text)
