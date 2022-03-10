@@ -23,7 +23,10 @@ int main(void)
     float S = s / w * 100;
     float rawIndex = 0.0588 * L - 0.296 * S - 15.8;
     int index = round(rawIndex);
-    printf("%i\n", index);
+    if (index < 1);
+    {
+        
+    }
 }
 
 int letters(string text)
