@@ -19,10 +19,14 @@ int main(void)
     float l = letters(inputText);
     float w = words(inputText);
     float s = sentences(inputText);
+    //letters per hundred words
     float L = l / w * 100;
+    //sentences per hundred words
     float S = s / w * 100;
     float rawIndex = 0.0588 * L - 0.296 * S - 15.8;
+    //rounding index to the nearest integer
     int index = round(rawIndex);
+    //check if index is less than one or greater then 15 or between one and 16
     if (index < 1)
     {
         printf("Before Grade 1\n");
