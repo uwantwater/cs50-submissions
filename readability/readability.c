@@ -10,7 +10,7 @@ int sentences(string text);
 int sentenceCount = 0;
 
 int words(string text);
-int wordCount = 0;
+int wordCount = 1;
 
 int main(void)
 {
