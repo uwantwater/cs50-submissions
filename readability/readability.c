@@ -16,14 +16,14 @@ int wordCount = 1;
 int main(void)
 {
     string inputText = get_string("Text: ");
-    int l = letters(inputText);
-    int w = words(inputText);
-    int s = sentences(inputText);
+    float l = letters(inputText);
+    float w = words(inputText);
+    float s = sentences(inputText);
     float L = l / w * 100;
     float S = s / w * 100;
     float rawIndex = 0.0588 * L - 0.296 * S - 15.8;
     int index = round(rawIndex);
-    printf("%f\n", L);
+    printf("%i\n", index);
 }
 
 int letters(string text)
