@@ -15,8 +15,10 @@ int wordCount = 0;
 int main(void)
 {
     string inputText = get_string("Text: ");
-    int no = sentences(inputText);
-    printf("%i\n", no);
+    int n1 = letters(inputText);
+    int n2 = words(inputText);
+    int n3 = sentences(inputText);
+    printf("%i letters, %i words, %i sentences\n", n1, n2, n3);
 }
 
 int letters(string text)
@@ -41,4 +43,16 @@ int sentences(string text)
         }
     }
     return sentenceCount;
+}
+
+int words(string text)
+{
+    for (int i = 0, n = strlen(text); i <= n; i++)
+    {
+        if (text[i] == ' ')
+        {
+            wordCount = wordCount + 1;
+        }
+    }
+    return wordCount;
 }
