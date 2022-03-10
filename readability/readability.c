@@ -18,6 +18,7 @@ int main(void)
     int n1 = letters(inputText);
     int n2 = words(inputText);
     int n3 = sentences(inputText);
+    float rawIndex = 
     printf("%i letters, %i words, %i sentences\n", n1, n2, n3);
 }
 
