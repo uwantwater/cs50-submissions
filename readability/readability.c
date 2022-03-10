@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+#include <math.h>
 
 int letters(string text);
 int letterCount = 0;
@@ -15,11 +16,12 @@ int wordCount = 1;
 int main(void)
 {
     string inputText = get_string("Text: ");
-    int n1 = letters(inputText);
-    int n2 = words(inputText);
-    int n3 = sentences(inputText);
-    float rawIndex = 
-    printf("%i letters, %i words, %i sentences\n", n1, n2, n3);
+    int L = letters(inputText);
+    int W = words(inputText);
+    int S = sentences(inputText);
+    float rawIndex = 0.0588 * ((L / W) * 100) - 0.296 * ((S / W) * 100) - 15.8;
+    int index = round(rawIndex);
+    printf("%i", index);
 }
 
 int letters(string text)
