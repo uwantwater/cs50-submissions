@@ -35,6 +35,10 @@ int sentences(string text)
 {
     for (int i = 0, n = strlen(text); i <= n; i++)
     {
-        if (text[i] =)
+        if (text[i] = '.' || text[i] = '!' || text[i] = '?')
+        {
+            sentenceCount = sentenceCount + 1;
+        }
     }
+    return sentenceCount
 }
