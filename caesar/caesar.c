@@ -15,7 +15,11 @@ int main(int argc, string argv[])
     }
     //get required string that is supposed to be ciphered from user
     string plaintext = get_string("plaintext:  ");
-    if ()
+    if (atoi(argv[1]) == 0)
+    {
+        printf("Usage : ./caesar key\n");
+        return 1;
+    }
     string ciphered = cipherblock(plaintext, atoi(argv[1]));
     printf("ciphertext: %s\n", ciphered);
 }
