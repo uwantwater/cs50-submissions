@@ -27,11 +27,14 @@ int main(int argc, string argv[])
 
 string cipherblock(string text, int keyz)
 {
-    do
+    if (keyz > 26)
     {
-        keyz = keyz - 26;
+        do
+        {
+            keyz = keyz - 26;
+        }
+        while (keyz > 26);
     }
-    while (keyz > 26);
     char ciphertext[64];
     static char output[64];
     for (int i = 0, n = strlen(text); i <= n; i++)
