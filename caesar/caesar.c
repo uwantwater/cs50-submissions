@@ -6,6 +6,8 @@
 
 int main(int argc, string argv[])
 {
+    
+
     //get required string that is supposed to be ciphered from user
     string plaintext = get_string("plaintext:  ");
     char ciphertext[64];
