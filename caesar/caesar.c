@@ -8,6 +8,10 @@ int main(int argc, string argv[])
 {
     //convert given key from string type to integer type
     int key = atoi(argv[1]);
+    if (key > 26)
+    {
+        key = key - 26;
+    }
     string plaintext = get_string("plaintext:  ");
     char ciphertext[64];
     char output[64];
@@ -16,6 +20,7 @@ int main(int argc, string argv[])
         if (toupper(plaintext[i]) >= 'A' && toupper(plaintext[i]) <= 'Z')
         {
             sprintf(ciphertext, "%c", plaintext[i]+ key);
+            
             strcat(output, ciphertext);
         }
     }
