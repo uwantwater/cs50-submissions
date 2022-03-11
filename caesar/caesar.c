@@ -8,15 +8,15 @@ int main(int argc, string argv[])
 {
     int key = atoi(argv[1]);
     string plaintext = get_string("plaintext:  ");
-    string ciphertext = "";
+    char ciphertext[50];
     for (int i = 0, n = strlen(plaintext); i <= n; i++)
     {
         if (toupper(plaintext[i]) >= 'A' && toupper(plaintext[i]) <= 'Z')
         {
-            printf("%c", plaintext[i]+ key);
+            sprintf(ciphertext, "%c", plaintext[i]+ key);
             //int converted = plaintext[i] + key;
             //ciphertext = strcat(ciphertext,(char) converted);
         }
     }
-    //printf("%i\n", ciphertext);
+    printf("%s\n", ciphertext);
 }
