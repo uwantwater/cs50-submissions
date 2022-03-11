@@ -8,15 +8,16 @@ int main(int argc, string argv[])
 {
     //convert given key from string type to integer type
     int key = atoi(argv[1]);
-    //get the string that is to be converted
     string plaintext = get_string("plaintext:  ");
     char ciphertext[50];
+    string output = "";
     for (int i = 0, n = strlen(plaintext); i <= n; i++)
     {
         if (toupper(plaintext[i]) >= 'A' && toupper(plaintext[i]) <= 'Z')
         {
-            sprintf(ciphertext, "");
+            sprintf(ciphertext, "%c", plaintext[i]+ key);
+            output = strcat(output, ciphertext);
         }
     }
-    printf("ciphertext: %s\n", ciphertext);
+    printf("%s\n", output);
 }
