@@ -9,14 +9,13 @@ int main(int argc, string argv[])
     int key = atoi(argv[1]);
     string plaintext = get_string("plaintext:  ");
     string ciphertext = "";
+    char buffer[50];
     for (int i = 0, n = strlen(plaintext); i <= n; i++)
     {
         if (toupper(plaintext[i]) >= 'A' && toupper(plaintext[i]) <= 'Z')
         {
-            printf("%c", plaintext[i]+ key);
-            //int converted = plaintext[i] + key;
-            //ciphertext = strcat(ciphertext,(char) converted);
+            ciphertext = sprintf(buffer, "%c", plaintext[i]+ key);
         }
     }
-    //printf("%i\n", ciphertext);
+    printf("ciphertext: %s", ciphertext);
 }
