@@ -16,7 +16,7 @@ int main(int argc, string argv[])
         if (toupper(plaintext[i]) >= 'A' && toupper(plaintext[i]) <= 'Z')
         {
             sprintf(ciphertext, "%c", plaintext[i]+ key);
-            output = strcat(output, ciphertext);
+            strcat(output, (string) ciphertext);
         }
     }
     printf("%s\n", output);
