@@ -19,12 +19,13 @@ int main(int argc, string argv[])
     printf("ciphertext: %s", ciphered);
 }
 
-string cipherblock(string text, int key)
+string cipherblock(string text, int keyz)
 {
     char ciphertext[64];
     char output[64];
     for (int i = 0, n = strlen(text); i <= n; i++)
     {
+        int key = keyz;
         if (toupper(text[i]) >= 'A' && toupper(text[i]) <= 'Z')
         {
             if (toupper((text[i] + key)) > 'Z')
