@@ -4,14 +4,12 @@
 
 string alphabets = "abcdefghijklmnopqrstuvwxyz"
 
-string cipher(string text);
+int index_of_character(char c);
 
 //take cipher key from command line input
 int main(int argc, string argv[])
 {
-    string plaintext = get_string("plaintext:  ");
-    string ciphertext = cipher(plaintext);
-    printf("ciphertext: %s\n", ciphertext);
+    
 }
 
 int index_of_character(char c)
@@ -24,13 +22,3 @@ int index_of_character(char c)
             break;
         }
     }
-
-string cipher(string text)
-{
-    string cipheredText;
-    for (int i = 0, n = strlen(text); i <= n; i++)
-    {
-        cipheredText = text[i]
-    }
-    return cipheredText;
-}
