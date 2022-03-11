@@ -10,19 +10,19 @@ int main(int argc, string argv[])
 {
     if (argc != 2)
     {
-        printf("Usage : ./caesar key");
+        printf("Usage : ./caesar key\n");
         return 1;
     }
     //get required string that is supposed to be ciphered from user
     string plaintext = get_string("plaintext:  ");
     string ciphered = cipherblock(plaintext, atoi(argv[1]));
-    printf("ciphertext: %s", ciphered);
+    printf("ciphertext: %s\n", ciphered);
 }
 
 string cipherblock(string text, int keyz)
 {
     char ciphertext[64];
-    char output[64];
+    static char output[64];
     for (int i = 0, n = strlen(text); i <= n; i++)
     {
         int key = keyz;
