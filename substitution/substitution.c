@@ -9,7 +9,7 @@ int index_of_character(char c);
 //take cipher key from command line input
 int main(int argc, string argv[])
 {
-    int index = index_of_character(argv);
+    int index = index_of_character(char)argv[1]);
     printf("index in alphabet is: %i" index);
 }
 
