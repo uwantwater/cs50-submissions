@@ -15,10 +15,10 @@ int main(int argc, string argv[])
     {
         if (toupper(plaintext[i]) >= 'A' && toupper(plaintext[i]) <= 'Z')
         {
-            printf("%c", plaintext[i]+ key);
+            sprintf(ciphertext, "%s%c", ciphertext, plaintext[i]+ key);
             //int converted = plaintext[i] + key;
             //ciphertext = strcat(ciphertext,(char) converted);
         }
     }
-    //printf("%i\n", ciphertext);
+    printf("%s\n", ciphertext);
 }
