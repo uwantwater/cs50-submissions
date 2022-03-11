@@ -13,7 +13,8 @@ int main(int argc, string argv[])
     {
         if (toupper(plaintext[i]) >= 'A' && toupper(plaintext[i]) <= 'Z')
         {
-            ciphertext = strcat(ciphertext, plaintext[i] + key)
+            char converted[] = plaintext[i] + key;
+            ciphertext = strcat(ciphertext, converted[1]);
         }
     }
     printf("%s\n", ciphertext);
