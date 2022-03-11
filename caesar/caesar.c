@@ -13,7 +13,7 @@ int main(int argc, string argv[])
     {
         if (toupper(plaintext[i]) >= 'A' && toupper(plaintext[i]) <= 'Z')
         {
-            char converted[] = plaintext[i] + key;
+            string converted = plaintext[i] + key;
             ciphertext = strcat(ciphertext, converted[1]);
         }
     }
