@@ -15,7 +15,7 @@ int main(int argc, string argv[])
     }
     //get required string that is supposed to be ciphered from user
 
-    if (atoi(argv[1]) == 0)
+    if (atoi(argv[1]) == (bool) 0)
     {
         printf("Usage : ./caesar key\n");
         return 2;
