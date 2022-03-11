@@ -13,11 +13,14 @@ int main(int argc, string argv[])
         printf("Usage : ./caesar key");
         return 1;
     }
+    //get required string that is supposed to be ciphered from user
     string plaintext = get_string("plaintext:  ");
+    string ciphered = cipherblock(plaintext);
+    printf("ciphertext: %s", ciphered);
 }
 
 string cipherblock(string text)
-    //get required string that is supposed to be ciphered from user
+{
     char ciphertext[64];
     char output[64];
     for (int i = 0, n = strlen(text); i <= n; i++)
