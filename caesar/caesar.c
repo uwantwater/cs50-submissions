@@ -25,6 +25,11 @@ int main(int argc, string argv[])
             //concatenate required output and ciphered character
             strcat(output, ciphertext);
         }
+        else
+        {
+            sprintf(ciphertext, "%c", plaintext[i]);
+            strcat(output, ciphertext);
+        }
     }
     printf("ciphertext: %s\n", output);
 }
