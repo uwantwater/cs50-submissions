@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
+string alphabets = "abcdefghijklmnopqrstuvwxyz"
+
 string cipher(string text);
 
 //take cipher key from command line input
@@ -16,7 +18,7 @@ string cipher(string text)
 {
     for (i = 0, n = strlen(plaintext); i <= n; i++)
     {
-        
+
     }
     return text;
 }
