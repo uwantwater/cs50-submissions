@@ -1,8 +1,9 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, string argv[])
 {
-    int i = (int) argv[1];
-    printf("%i\n", i);
+    int key = atoi(argv[1]);
+    printf("%i\n", key);
 }
