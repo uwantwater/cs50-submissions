@@ -20,7 +20,7 @@ int main(int argc, string argv[])
     {
         if (toupper(plaintext[i]) >= 'A' && toupper(plaintext[i]) <= 'Z')
         {
-            if (plaintext[i] + key > 26);
+            if (toupper((plaintext[i] + key)) > 'Z')
             {
                 key = key - 26;
                 //cipher character and store it in variable ciphertext
