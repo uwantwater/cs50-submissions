@@ -19,8 +19,8 @@ int index_of_character(char c)
     {
         if (alphabets[j] == c)
         {
-            return j;
             break;
         }
+        return j;
     }
 }
