@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-string alphabets = "abcdefghijklmnopqrstuvwxyz"
+string alphabets = "abcdefghijklmnopqrstuvwxyz";
 
 int index_of_character(char c);
 
