@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 string cipher(string text);
 
@@ -13,6 +14,9 @@ int main(int argc, string argv[])
 
 string cipher(string text)
 {
-    
+    for (i = 0, n = strlen(plaintext); i <= n; i++)
+    {
+        
+    }
     return text;
 }
