@@ -6,7 +6,9 @@
 
 int main(int argc, string argv[])
 {
+    //convert given key from string type to integer type
     int key = atoi(argv[1]);
+    //get the string that is to be converted
     string plaintext = get_string("plaintext:  ");
     string ciphertext = "";
     for (int i = 0, n = strlen(plaintext); i <= n; i++)
