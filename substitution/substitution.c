@@ -4,6 +4,6 @@
 int main(int argc, string argv[])
 {
     string plaintext = get_string("plaintext: ");
-    sprintf("%c%s", argv[0], plaintext);
+    sprintf(text, "%s%s", argv[0], plaintext);
     printf("%s\n", text);
 }
