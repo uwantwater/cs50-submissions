@@ -18,7 +18,7 @@ int main(int argc, string argv[])
     if (atoi(argv[1]) == 0)
     {
         printf("Usage : ./caesar key\n");
-        return 1;
+        return 2;
     }
     string plaintext = get_string("plaintext:  ");
     string ciphered = cipherblock(plaintext, atoi(argv[1]));
