@@ -10,12 +10,12 @@ int main(int argc, string argv[])
     int key = atoi(argv[1]);
     //get the string that is to be converted
     string plaintext = get_string("plaintext:  ");
-    string ciphertext = "";
+    char ciphertext[50];
     for (int i = 0, n = strlen(plaintext); i <= n; i++)
     {
         if (toupper(plaintext[i]) >= 'A' && toupper(plaintext[i]) <= 'Z')
         {
-            sprintf();
+            sprintf(ciphertext, "");
         }
     }
     printf("ciphertext: %s\n", ciphertext);
