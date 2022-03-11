@@ -12,6 +12,7 @@ int main(int argc, string argv[])
     {
         key = key - 26;
     }
+    //get required string that is supposed to be ciphered from user
     string plaintext = get_string("plaintext:  ");
     char ciphertext[64];
     char output[64];
@@ -19,8 +20,9 @@ int main(int argc, string argv[])
     {
         if (toupper(plaintext[i]) >= 'A' && toupper(plaintext[i]) <= 'Z')
         {
-            sprintf(ciphertext, "%c", plaintext[i]+ key);
-            
+            //cipher character and store it in variable ciphertext
+            sprintf(ciphertext, "%c", plaintext[i] + key);
+            //concatenate required output and ciphered character
             strcat(output, ciphertext);
         }
     }
