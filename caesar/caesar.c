@@ -6,7 +6,11 @@
 
 int main(int argc, string argv[])
 {
-    
+    if (argc != 2)
+    {
+        printf("Usage : ./caesar key");
+        return 1;
+    }
 
     //get required string that is supposed to be ciphered from user
     string plaintext = get_string("plaintext:  ");
