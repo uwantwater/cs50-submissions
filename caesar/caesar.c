@@ -15,8 +15,8 @@ int main(int argc, string argv[])
     {
         if (toupper(plaintext[i]) >= 'A' && toupper(plaintext[i]) <= 'Z')
         {
-            
+            sprintf()
         }
     }
-    printf("%s\n", ciphertext);
+    printf("ciphertext: %s\n", ciphertext);
 }
