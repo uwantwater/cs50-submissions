@@ -4,5 +4,5 @@
 int main(int argc, string argv[])
 {
     string plaintext = get_string("plaintext: ");
-
+    string text = 
 }
