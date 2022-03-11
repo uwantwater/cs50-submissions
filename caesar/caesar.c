@@ -16,8 +16,6 @@ int main(int argc, string argv[])
         {
             sprintf(raw, "%c", plaintext[i]+ key);
             ciphertext = strcat(ciphertext, raw);
-            //int converted = plaintext[i] + key;
-            //ciphertext = strcat(ciphertext,(char) converted);
         }
     }
     printf("%s\n", ciphertext);
