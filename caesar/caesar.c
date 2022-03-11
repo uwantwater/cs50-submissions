@@ -17,6 +17,7 @@ int main(int argc, string argv[])
     char ciphertext[64];
     char output[64];
     for (int i = 0, n = strlen(plaintext); i <= n; i++)
+    key = atoi(argv[1]);
     {
         if (toupper(plaintext[i]) >= 'A' && toupper(plaintext[i]) <= 'Z')
         {
