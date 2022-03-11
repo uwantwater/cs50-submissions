@@ -4,7 +4,7 @@
 #include <string.h>
 #include <ctype.h>
 
-string cipherblock(string text);
+string cipherblock(string text, int keyz);
 
 int main(int argc, string argv[])
 {
@@ -15,7 +15,7 @@ int main(int argc, string argv[])
     }
     //get required string that is supposed to be ciphered from user
     string plaintext = get_string("plaintext:  ");
-    string ciphered = cipherblock(plaintext, argv[1]);
+    string ciphered = cipherblock(plaintext, atoi(argv[1]));
     printf("ciphertext: %s", ciphered);
 }
 
