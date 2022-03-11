@@ -14,6 +14,13 @@ int main(int argc, string argv[])
     printf("ciphertext: %s\n", ciphertext);
 }
 
+int index_of_character(string text)
+{
+    for (i = 0, n = strlen(plaintext); i <= n; i++)
+    {
+        
+    }
+
 string cipher(string text)
 {
     for (i = 0, n = strlen(plaintext); i <= n; i++)
