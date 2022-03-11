@@ -6,19 +6,18 @@
 
 int main(int argc, string argv[])
 {
-    //convert given key from string type to integer type
-    int key = atoi(argv[1]);
-    if (key > 26)
-    {
-        key = key - 26;
-    }
     //get required string that is supposed to be ciphered from user
     string plaintext = get_string("plaintext:  ");
     char ciphertext[64];
     char output[64];
     for (int i = 0, n = strlen(plaintext); i <= n; i++)
-    key = atoi(argv[1]);
     {
+        //convert given key from string type to integer type
+        int key = atoi(argv[1]);
+        if (key > 26)
+        {
+            key = key - 26;
+        }
         if (toupper(plaintext[i]) >= 'A' && toupper(plaintext[i]) <= 'Z')
         {
             if (toupper((plaintext[i] + key)) > 'Z')
