@@ -5,5 +5,6 @@
 int main(int argc, string argv[])
 {
     int key = atoi(argv[1]);
-    printf("%i\n", key);
+    string plaintext[] = get_string("plaintext:  ")
+    printf("%s\n", plaintext);
 }
