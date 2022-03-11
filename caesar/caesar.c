@@ -20,10 +20,21 @@ int main(int argc, string argv[])
     {
         if (toupper(plaintext[i]) >= 'A' && toupper(plaintext[i]) <= 'Z')
         {
-            //cipher character and store it in variable ciphertext
-            sprintf(ciphertext, "%c", plaintext[i] + key);
-            //concatenate required output and ciphered character
-            strcat(output, ciphertext);
+            if (plaintext[i] + key > 26);
+            {
+                key = key - 26;
+                //cipher character and store it in variable ciphertext
+                sprintf(ciphertext, "%c", plaintext[i] + key);
+                //concatenate required output and ciphered character
+                strcat(output, ciphertext);
+            }
+            else
+            {
+                //cipher character and store it in variable ciphertext
+                sprintf(ciphertext, "%c", plaintext[i] + key);
+                //concatenate required output and ciphered character
+                strcat(output, ciphertext);
+            }
         }
         else
         {
