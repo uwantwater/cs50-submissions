@@ -3,6 +3,7 @@
 
 int main(int argc, string argv[])
 {
-    string plaintext = getstring("plaintext: ");
-    
+    string plaintext = get_string("plaintext: ");
+    string text = argv[0] + plaintext;
+    printf("%s%s\n", text);
 }
