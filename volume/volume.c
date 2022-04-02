@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
     // TODO: Copy header from input file to output file
     headerByte header[44];
     fread(header, sizeof(headerByte), 44, input);
-    fprintf()
+    fprintf(output,)
     // TODO: Read samples from input file and write updated data to output file
 
     // Close files
