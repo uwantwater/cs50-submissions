@@ -10,10 +10,10 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     int green = 0;
     int blue = 0;
     //loop for columns
-    for (i = 0, i < height, i++)
+    for (int i = 0; i < height; i++)
     {
         //loop for rows
-        for (j = 0, j < width, j++)
+        for (int j = 0; j < width; j++)
         {
             red = image[i][j].rgbtRed;
             green = image[i][j].rgbtGreen;
@@ -33,14 +33,13 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
     //initialize required variables
-    int sepia = 0;
-    int red = 0;
-    int green = 0;
-    int blue = 0;
+    int sepiaRed = 0;
+    int sepiaGreen = 0;
+    int sepiaBlue = 0;
     //loop for columns
-    for (i = 0, i < height, i++)
+    for (int i = 0; i < height; i++)
     {
-        for (j = 0, j < width, j++)
+        for (int j = 0; j < width; j++)
         {
             red = image[i][j].rgbtRed;
             green = image[i][j].rgbtGreen;
