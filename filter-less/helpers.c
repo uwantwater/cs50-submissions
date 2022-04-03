@@ -33,9 +33,9 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
     //initialize required variables
-    int sepiaRed = 0;
-    int sepiaGreen = 0;
-    int sepiaBlue = 0;
+    float sepiaRed = 0;
+    float sepiaGreen = 0;
+    float sepiaBlue = 0;
     //loop for columns
     for (int i = 0; i < height; i++)
     {
@@ -52,9 +52,9 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             if (sepiaBlue > 255)
                 sepiaBlue = 255;
             //substitute pixel with sepia rgb values
-            image[i][j].rgbtRed = sepiaRed;
-            image[i][j].rgbtGreen = sepiaGreen;
-            image[i][j].rgbtBlue = sepiaBlue;
+            image[i][j].rgbtRed = round(sepiaRed);
+            image[i][j].rgbtGreen = round(sepiaGreen);
+            image[i][j].rgbtBlue = round(sepiaBlue);
         }
     }
     return;
