@@ -41,17 +41,14 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
-            red = image[i][j].rgbtRed;
-            green = image[i][j].rgbtGreen;
-            blue = image[i][j].rgbtBlue;
             //calculate sepia values and cap at 255
-            sepiaRed = .393 * red + .769 * green + .189 * blue;
+            sepiaRed = .393 * image[i][j].rgbtRed + .769 * image[i][j].rgbtGreen + .189 * image[i][j].rgbtBlue;
             if (sepiaRed > 255)
                 sepiaRed = 255;
-            sepiaGreen = .349 * red + .686 * green + .168 * blue;
+            sepiaGreen = .349 * image[i][j].rgbtRed + .686 * image[i][j].rgbtGreen + .168 * image[i][j].rgbtBlue;
             if (sepiaGreen > 255)
                 sepiaGreen = 255;
-            sepiaBlue = .272 * red + .534 * green + .131 * blue;
+            sepiaBlue = .272 * image[i][j].rgbtRed + .534 * image[i][j].rgbtGreen + .131 * image[i][j].rgbtBlue;
             if (sepiaBlue > 255)
                 sepiaBlue = 255;
             //substitute pixel with sepia rgb values
