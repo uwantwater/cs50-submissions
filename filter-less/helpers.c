@@ -40,7 +40,20 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
     //loop for columns
     for (i = 0, i < height, i++)
     {
-
+        for (j = 0, j < width, j++)
+        {
+            red = image[i][j].rgbtRed;
+            green = image[i][j].rgbtGreen;
+            blue = image[i][j].rgbtBlue;
+            //calculate sepia values and 
+            sepiaRed = .393 * red + .769 * green + .189 * blue;
+            sepiaGreen = .349 * red + .686 * green + .168 * blue;
+            sepiaBlue = .272 * red + .534 * green + .131 * blue;
+            //substitute pixel with sepia rgb values
+            image[i][j].rgbtRed = sepiaRed;
+            image[i][j].rgbtGreen = sepiaGreen;
+            image[i][j].rgbtBlue = sepiaBlue;
+        }
     }
     return;
 }
