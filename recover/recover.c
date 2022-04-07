@@ -6,12 +6,15 @@ typedef uint8_t BYTE;
 
 int main(int argc, char *argv[])
 {
+    //checks for correct usage
     if (argc != 2)
     {
         printf("Usage: ./recover IMAGE\n");
         return 1;
     }
+    //open file
     FILE *file = fopen(argv[1], "r");
+    //checks if file is accessible
     if (file == NULL)
     {
         printf("Could not open file.\n");
@@ -24,11 +27,10 @@ int main(int argc, char *argv[])
     int counter = 0;
     while (fread(buffer, sizeof(BYTE), 512, file) == 512)
     {
-        // checks if start of img in buffer
+        //checks if buffer starts with jpeg values
         if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
         {
-            // if start of img and first image i.e. counter ==0
-            // then begins writing a new image
+            //write if it is start
             if (counter == 0)
             {
                 sprintf(filename, "%03i.jpg", counter);
@@ -36,8 +38,7 @@ int main(int argc, char *argv[])
                 fwrite(&buffer, sizeof(BYTE), 512, img);
                 counter += 1;
             }
-            // if start of img but not first image then
-            // closes the image and begins writing new image
+            //to write images other than t he starting image
             else if (counter > 0)
             {
                 fclose(img);
@@ -47,8 +48,7 @@ int main(int argc, char *argv[])
                 counter += 1;
             }
         }
-        // if not start of new img
-        // then it keeps on writing the image
+        //keep writing images
         else if (counter > 0)
         {
             fwrite(&buffer, sizeof(BYTE), 512, img);
@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 
     }
 
-    // Close file
+    //Close file
     fclose(file);
     fclose(img);
 }
