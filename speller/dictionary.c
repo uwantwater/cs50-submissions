@@ -47,7 +47,11 @@ bool load(const char *dictionary)
     {
         fscanf(file, "%s",buffer);
         node *n = malloc(sizeof(node));
-        
+        if (n == NUL)
+        {
+            return false;
+        }
+        strcpy();
     }
     return true;
 }
