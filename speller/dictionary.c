@@ -45,6 +45,7 @@ bool load(const char *dictionary)
     char buffer[LENGTH + 1];
     while (buffer != EOF)
     {
+        fscanf(file, "%s",buffer);
         
     }
     return true;
