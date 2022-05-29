@@ -38,8 +38,11 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     FILE *file = fopen(argv[1], "r");
-    
-    return false;
+    if (!file)
+    {
+        return false;
+    }
+    return true;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
