@@ -43,7 +43,10 @@ bool load(const char *dictionary)
         return false;
     }
     char buffer[LENGTH + 1];
-    while 
+    while (buffer != EOF)
+    {
+        
+    }
     return true;
 }
 
