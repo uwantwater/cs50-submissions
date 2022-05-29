@@ -52,7 +52,8 @@ bool load(const char *dictionary)
             return false;
         }
         strcpy(n->word, buffer);
-        
+        n->next = NULL;
+        hash_table = n;
     }
     return true;
 }
