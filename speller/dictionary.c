@@ -42,6 +42,8 @@ bool load(const char *dictionary)
     {
         return false;
     }
+    node *n = malloc(sizeof(node));
+    
     return true;
 }
 
