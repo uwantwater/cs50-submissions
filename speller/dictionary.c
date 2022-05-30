@@ -46,15 +46,16 @@ bool load(const char *dictionary)
     while (fscanf(file, "%s", buffer) != EOF)
     {
         node *n = malloc(sizeof(node));
-        if (n == NUL)
+        if (n == NULL)
         {
             return false;
         }
         int index = hash(buffer);
         strcpy(n->word, buffer);
-        n->next = NULL;
+        n->next = table[index];
         table[index] = n;
     }
+    fclose(file);
     return true;
 }
 
