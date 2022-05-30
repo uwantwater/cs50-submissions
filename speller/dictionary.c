@@ -51,9 +51,10 @@ bool load(const char *dictionary)
         {
             return false;
         }
+        index = hash(buffer);
         strcpy(n->word, buffer);
         n->next = NULL;
-        hash_table = n;
+        table[index] = n;
     }
     return true;
 }
