@@ -5,4 +5,5 @@ number = list(str(number))
 num = ""
 number = num.join(number)
 
-print(number)
+print(type(number))
+print(number[0:2])

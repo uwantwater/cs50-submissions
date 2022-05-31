@@ -11,7 +11,7 @@ def main():
     if checksum(card_num) == True:
         num = ""
         card_num = num.join(card_num)
-        if 
+        if card_num[0:2] == ""
     else:
         sys.exit("INVALID\n")
 
