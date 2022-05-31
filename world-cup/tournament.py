@@ -20,6 +20,7 @@ def main():
     for row in reader:
         buffer = {"team" : row["team"], "rating": int(row["rating"])}
         teams.append(buffer)
+    file.close()
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
@@ -53,7 +54,7 @@ def simulate_round(teams):
 
 def simulate_tournament(teams):
     """Simulate a tournament. Return name of winning team."""
-    
+
 
 
 if __name__ == "__main__":

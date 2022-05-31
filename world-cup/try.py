@@ -6,5 +6,6 @@ reader = csv.DictReader(file)
 for row in reader:
     buffer = {"team" : row["team"], "rating": int(row["rating"])}
     teams.append(buffer)
+file.close()
 
 print(teams)
