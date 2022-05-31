@@ -18,7 +18,8 @@ list1 = list(map(lambda x : x * 2, list1))
 for n in list1:
     if n > 9:
         items = list(list1[n])
-        del list1[]
+        list1.remove(n)
+        list1.append(items)
 
 print(list1)
 print(list2)
