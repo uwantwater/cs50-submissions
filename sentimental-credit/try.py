@@ -10,8 +10,8 @@ for i in range(len(number) - 1, 0, -2):
     list1.append(i)
 for i in range(len(number), 0, -2):
     list2.append(i)
-list1 = list(reduce(add, list(map(lambda x : x * 2, list1))))
-#list1 = list(reduce(add, list1))
+list1 = list(map(lambda x : x * 2, list1))
+list1 = list(reduce(add, list1))
 
 print(list1)
 print(list2)
