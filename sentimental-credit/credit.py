@@ -2,6 +2,7 @@ import sys
 from functools import reduce
 from operator import add
 
+
 def main():
 
     # asking for input and converting it to a list of numbers
@@ -22,19 +23,25 @@ def main():
     else:
         sys.exit("INVALID")
 
+
 def checksum(number):
     listm = number.copy()
     listn = number.copy()
     list1 = []
     list2 = []
 
+    # deleting the last element because we dont need it for this list
     del listm[-1]
+    # for every other digit from second to last
     for i in range(len(listm) - 1, -1, -2):
         list1.append(int(listm[i]))
+    # for every other digit from the last
     for i in range(len(listn) - 1, -1, -2):
         list2.append(int(listn[i]))
 
-    list1 = list(map(lambda x : x * 2, list1))
+    # Source : Geeks for Geeks. Multiplies every element in list by 2
+    list1 = list(map(lambda x: x * 2, list1))
+    # separates double digits to two individual digits as per the requirement of Luhn's algorithm
     for n in list1:
         if n > 9:
             pos = list1.index(n)
