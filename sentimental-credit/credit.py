@@ -28,9 +28,9 @@ def checksum(number):
 
     del listm[-1]
     for i in range(len(listm) - 1, -1, -2):
-        list1.append(listm[i])
+        list1.append(int(listm[i]))
     for i in range(len(listn) - 1, -1, -2):
-        list2.append(listn[i])
+        list2.append(int(listn[i]))
 
     list1 = list(map(lambda x : x * 2, list1))
 
