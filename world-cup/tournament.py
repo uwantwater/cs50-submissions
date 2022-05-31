@@ -14,12 +14,12 @@ def main():
     if len(sys.argv) != 2:
         sys.exit("Usage: python tournament.py FILENAME")
 
-    teams = {}
+    teams = []
     file = open(argv[1], "r")
     reader = csv.DictReader(file)
     for row in reader:
-        team = row("team")
-        teams[team] = row("rating")
+        team = row["team"]
+        teams.append(team)
 
 
     counts = {}
