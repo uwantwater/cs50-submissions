@@ -1,7 +1,7 @@
 from functools import reduce
 from operator import add
 
-number = list(str(378282246310005))
+number = list(str(371449635398431))
 number = list(map(int, number))
 
 list1 = []
