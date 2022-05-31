@@ -9,7 +9,7 @@ list2 = []
 
 for i in range(len(number) - 2, 0, -2):
     list1.append(number[i])
-for i in range(len(number) - 1, 0, -2):
+for i in range(0, len(number), 2):
     list2.append(number[i])
 print(number)
 print(list1)
