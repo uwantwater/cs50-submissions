@@ -8,7 +8,7 @@ list1 = list(map(int, number))
 list2 = list(map(int, number))
 
 del list1[-1]
-#del list1[len(list1):0:-2]
+del list1[len(list1):0:-2]
 del list2[len(number):0:-2]
 
 print(number)
