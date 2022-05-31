@@ -14,7 +14,7 @@ list2 = []
 
 list1 = number[0:len(number)-1]
 list1 = list1[::2]
-list2 = number[2::]
+list2 = number[::2]
 
 print(number)
 print(list1)
