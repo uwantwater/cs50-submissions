@@ -11,7 +11,7 @@ list2 = []
 del listm[-1]
 for i in range(len(listm) - 1, -2, -2):
     list1.append(listm[i])
-for i in range(len(listn) - 1, -2, -2):
+for i in range(len(listn) - 1, -1, -2):
     list2.append(listn[i])
 
 print(list1)
