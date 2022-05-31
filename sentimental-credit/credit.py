@@ -12,11 +12,11 @@ def main():
 def checksum(number):
     list1 = []
     list2 = []
+    for i in range(len(number) - 1, 0, -2):
+        list1.append(i)
     for i in range(len(number), 0, -2):
-        list1.append(number[i])
-    for i in range(len(number - 1), 0, -2):
-        list2.append(number[i])
-
+        list2.append(i)
+    list1 = map(lambda x : x * 2, list1)
 
 
 if __name__ == '__main__':
