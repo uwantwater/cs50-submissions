@@ -1,7 +1,7 @@
 from functools import reduce
 from operator import add
 
-number = list(str(4003600000000014))
+number = list(str(378282246310005))
 
 list1 = number[::-1]
 list1 = list1[::2]
