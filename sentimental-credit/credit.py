@@ -6,10 +6,10 @@ def main():
 
     card_num = input("Number: ")
     while card_num.isnumeric() == False:
-        card_num = list(input("Number: "))
+        card_num = list(str(input("Number: ")))
 
     if checksum(card_num) == True:
-        if
+        if 
     else:
         sys.exit("INVALID\n")
 

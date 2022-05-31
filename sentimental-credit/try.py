@@ -3,7 +3,7 @@ from operator import add
 
 number = 4003600000000014
 
-number = list(number)
+number = list(str(number))
 
 list1 = []
 list2 = []
@@ -20,4 +20,3 @@ list1 = reduce(add, list1)
 sum = list1 + list2
 if sum % 10 == 0:
     print("True")
-print("False")
