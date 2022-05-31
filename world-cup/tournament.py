@@ -16,6 +16,7 @@ def main():
 
     teams = []
     file = open(argv[1], "r")
+    reader = csv.reader(file)
     
 
     counts = {}
