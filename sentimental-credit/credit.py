@@ -11,7 +11,8 @@ def main():
     if checksum(card_num) == True:
         num = ""
         card_num = num.join(card_num)
-        if card_num[0:2] == ""
+        if card_num[0] == "4":
+            print("VISA")
     else:
         sys.exit("INVALID\n")
 

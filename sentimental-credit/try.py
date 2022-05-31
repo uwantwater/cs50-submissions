@@ -6,4 +6,4 @@ num = ""
 number = num.join(number)
 
 print(type(number))
-print(number[0:2])
+print(number[0])
