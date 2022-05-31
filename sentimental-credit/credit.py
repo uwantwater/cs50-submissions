@@ -17,7 +17,7 @@ def checksum(number):
     for i in range(len(number), 0, -2):
         list2.append(i)
     list1 = list(map(lambda x : x * 2, list1))
-    list1 = list(reduce(lambda x,y : x + y, list1))
+    
 
 if __name__ == '__main__':
     main()

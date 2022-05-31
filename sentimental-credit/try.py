@@ -11,7 +11,7 @@ for i in range(len(number) - 1, 0, -2):
 for i in range(len(number), 0, -2):
     list2.append(i)
 list1 = list(map(lambda x : x * 2, list1))
-list1 = list(reduce(add, list1))
+list2 = list(reduce(add, list2))
 
 print(list1)
 print(list2)
