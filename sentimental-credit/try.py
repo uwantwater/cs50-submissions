@@ -10,7 +10,7 @@ for i in range(len(number) - 1, 0, -2):
 for i in range(len(number), 0, -2):
     list2.append(i)
 list1 = list(map(lambda x : x * 2, list1))
-list1 = list(reduce(lambda x,y : x+y, list1))
+list1 = list(functools.reduce(lambda x,y : x+y, list1))
 
 print(list1)
 print(list2)
