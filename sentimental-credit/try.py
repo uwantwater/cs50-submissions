@@ -1,7 +1,9 @@
 from functools import reduce
 from operator import add
 
-number = [4,0,0,3,6,0,0,0,0,0,0,0,0,0,1,4]
+number = 4003600000000014
+
+number = list(number)
 
 list1 = []
 list2 = []
