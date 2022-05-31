@@ -33,13 +33,18 @@ def checksum(number):
         list2.append(int(listn[i]))
 
     list1 = list(map(lambda x : x * 2, list1))
-    print(list1)
+    for n in list1:
+        if n > 9:
+            pos = list1.index(n)
+            items = list(str(list1[pos]))
+            items = list(map(int, items))
+            list1.remove(n)
+            list1 += items
+
     list1 = reduce(add, list1)
     list2 = reduce(add, list2)
-    print(list1)
-    print(list2)
+
     sum = list1 + list2
-    print(sum)
 
     if sum % 10 == 0:
         return True
