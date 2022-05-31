@@ -4,12 +4,11 @@ from operator import add
 number = list(str(5105105105105100))
 number = list(map(int, number))
 
-list1 = []
-list2 = []
+list1 = number
+list2 = number
 
-for i in range(len(number) - 1, 0, -2):
-    list2.append(number[i])
-number
+del list1[-1]
+del list2[0:len(number)-1:2]
 
 print(number)
 print(list1)
