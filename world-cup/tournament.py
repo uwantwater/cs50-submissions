@@ -19,7 +19,7 @@ def main():
     file = open(sys.argv[1], "r")
     reader = csv.DictReader(file)
     for row in reader:
-        buffer = {"team" : row["team"], "rating": int(row["rating"])}
+        buffer = {"team": row["team"], "rating": int(row["rating"])}
         teams.append(buffer)
         counts[row["team"]] = 0
     file.close()
@@ -60,6 +60,7 @@ def simulate_tournament(teams):
     while len(teams) > 1:
         teams = simulate_round(teams)
     return teams[0]["team"]
+
 
 if __name__ == "__main__":
     main()
