@@ -21,7 +21,7 @@ def main():
         else:
             print("INVALID")
     else:
-        sys.exit("INVALID")
+        print("INVALID")
 
 
 def checksum(number):
