@@ -42,13 +42,12 @@ def checksum(number):
     # Source : Geeks for Geeks. Multiplies every element in list by 2
     list1 = list(map(lambda x: x * 2, list1))
     # separates double digits to two individual digits as per the requirement of Luhn's algorithm
-    for n in list1:
-        if n > 9:
-            pos = list1.index(n)
-            items = list(str(list1[pos]))
+    for i in range(len(list1)):
+        if list1[i] > 9:
+            items = list(str(list1[i]))
             items = list(map(int, items))
-            list1.remove(n)
-            list1 = list1[0:pos] + items + list1[pos:len(list1)-1]
+            list1.remove(list[i])
+            list1 = list1[0:i] + items + list1[i:len(list1)-1]
     print(list1)
     list1 = reduce(add, list1)
     list2 = reduce(add, list2)
