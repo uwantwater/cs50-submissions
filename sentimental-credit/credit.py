@@ -31,13 +31,15 @@ def checksum(number):
         list1.append(int(listm[i]))
     for i in range(len(listn) - 1, -1, -2):
         list2.append(int(listn[i]))
-
+    print(list1)
+    print(list2)
     list1 = list(map(lambda x : x * 2, list1))
-
+    print(list1)
     list1 = reduce(add, list1)
     list2 = reduce(add, list2)
 
     sum = list1 + list2
+    print(sum)
 
     if sum % 10 == 0:
         return True
