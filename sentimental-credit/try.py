@@ -12,7 +12,8 @@ list2 = []
 #for i in range(len(number) - 2, -1, -2):
 #    list2.append(number[i])
 
-list1 = number[::1]
+list1 = number[0:]
+list2 = number[2::]
 
 print(number)
 print(list1)
