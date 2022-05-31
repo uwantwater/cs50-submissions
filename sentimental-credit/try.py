@@ -18,7 +18,8 @@ list1 = list(map(lambda x : x * 2, list1))
 for n in list1:
     if n > 9:
         pos = list1.index(n)
-        items = list(list1[pos])
+        items = list(str(list1[pos]))
+        print(items)
         list1.remove(n)
         list1.append(items)
 
