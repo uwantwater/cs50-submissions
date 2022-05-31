@@ -7,10 +7,12 @@ number = list(map(int, number))
 list1 = []
 list2 = []
 
-for i in range(len(number) - 1, 0, -2):
-    list1.append(number[i])
-for i in range(len(number) - 2, -1, -2):
-    list2.append(number[i])
+#for i in range(len(number) - 1, 0, -2):
+#    list1.append(number[i])
+#for i in range(len(number) - 2, -1, -2):
+#    list2.append(number[i])
+
+
 print(number)
 print(list1)
 print(list2)
