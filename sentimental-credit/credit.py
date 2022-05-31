@@ -4,8 +4,10 @@ from operator import add
 
 def main():
 
+    # asking for input and converting it to a list of numbers
     card_num = list(str(input("Number: ")))
 
+    # calling the credit card checksum function based on Luhn's Algorithm
     if checksum(card_num) == True:
         num = ""
         card_num = num.join(card_num)
