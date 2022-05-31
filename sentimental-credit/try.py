@@ -19,9 +19,10 @@ for n in list1:
     if n > 9:
         pos = list1.index(n)
         items = list(str(list1[pos]))
+        items = list(map(int, items))
         print(items)
         list1.remove(n)
-        list1.(items)
+        list1 += items
 
 print(list1)
 print(list2)
