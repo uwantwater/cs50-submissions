@@ -20,7 +20,7 @@ def main():
         else:
             print("INVALID")
     else:
-        sys.exit("INVALID\n")
+        sys.exit("INVALID")
 
 def checksum(number):
     list1 = []
