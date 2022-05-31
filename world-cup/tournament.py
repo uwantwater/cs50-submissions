@@ -24,7 +24,8 @@ def main():
     counts = {}
     for row in reader:
         counts[row["team"]] = 0
-    
+    for i in range(N):
+        winner = simulate_tournament(teams)
 
     # Print each team's chances of winning, according to simulation
     for team in sorted(counts, key=lambda team: counts[team], reverse=True):
