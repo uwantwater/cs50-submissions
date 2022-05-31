@@ -24,6 +24,7 @@ def main():
     counts = {}
     for row in reader:
         counts[row["team"]] = 0
+    file.close()
     for i in range(N):
         winner = simulate_tournament(teams)
         counts[winner] += 1
