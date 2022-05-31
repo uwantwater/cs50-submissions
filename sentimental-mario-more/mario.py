@@ -1,5 +1,8 @@
-# ask for height of brick wall
-height = 0
+def main():
+    height = 0
+    while height > 8 or height <= 0:
+        height = int(input("Height: "))
+    
 
-while height > 8 or height < 0:
-    height = input("Height: ")
+if __name__ == '__main__':
+    main()
