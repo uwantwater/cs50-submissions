@@ -1,7 +1,7 @@
 from functools import reduce
 from operator import add
 
-number = list(str(371449635398431))
+number = list(str(4012888888881881))
 number = list(map(int, number))
 
 list1 = []
@@ -12,8 +12,8 @@ list2 = []
 #for i in range(len(number) - 2, -1, -2):
 #    list2.append(number[i])
 
-list1 = number[0:len(number)-1]
-list1 = list1[::2]
+li = number[0:len(number)-1]
+list1 = li[::2]
 list2 = number[::2]
 
 print(number)
