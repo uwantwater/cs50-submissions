@@ -1,14 +1,15 @@
 from functools import reduce
 from operator import add
 
-number = list(str(5105105105105100))
+number = list(str(378282246310005))
 number = list(map(int, number))
 
-list1 = number
-list2 = number
+list1 = list(map(int, number))
+list2 = list(map(int, number))
 
 del list1[-1]
-del list2[0:len(number)-1:2]
+del list1[len(list1):0:-2]
+del list2[len(number):0:-2]
 
 print(number)
 print(list1)
