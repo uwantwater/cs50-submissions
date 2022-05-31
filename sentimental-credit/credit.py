@@ -5,8 +5,6 @@ from operator import add
 def main():
 
     card_num = list(str(input("Number: ")))
-    while card_num.isnumeric() == False:
-        card_num = list(str(input("Number: ")))
 
     if checksum(card_num) == True:
         num = ""
