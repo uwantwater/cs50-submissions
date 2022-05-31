@@ -1,10 +1,10 @@
 from functools import reduce
 from operator import add
 
-number = list(str(378282246310005))
+number = list(str(4003600000000014))
 
-listm = list(str(378282246310005))
-listn = list(str(378282246310005))
+listm = list(str(4003600000000014))
+listn = list(str(4003600000000014))
 list1 = []
 list2 = []
 
