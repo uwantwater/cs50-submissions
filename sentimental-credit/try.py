@@ -17,7 +17,8 @@ for i in range(len(listn) - 1, -1, -2):
 list1 = list(map(lambda x : x * 2, list1))
 for n in list1:
     if n > 9:
-        
+        items = list(list1[n])
+        del list1[]
 
 print(list1)
 print(list2)
