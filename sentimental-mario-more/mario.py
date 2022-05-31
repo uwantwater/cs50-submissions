@@ -6,8 +6,7 @@ def main():
     except ValueError:
         while height > 8 or height <= 0:
             height = int(input("Height: "))
-    i = 1
-    for i in range(height+2):
+    for i in range(1,height+1):
         print(" " * (height-i), end='')
         print("#" * i, end='')
         print("  ", end='')
