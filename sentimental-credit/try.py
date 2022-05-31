@@ -1,15 +1,15 @@
 from functools import reduce
 from operator import add
 
-number = list(str(4003600000000014))
+number = list(str(378282246310005))
 
-listm = list(str(4003600000000014))
-listn = list(str(4003600000000014))
+listm = list(str(378282246310005))
+listn = list(str(378282246310005))
 list1 = []
 list2 = []
 
 del listm[-1]
-for i in range(len(listm) - 1, -2, -2):
+for i in range(len(listm) - 1, 0, -2):
     list1.append(listm[i])
 for i in range(len(listn) - 1, -1, -2):
     list2.append(listn[i])
