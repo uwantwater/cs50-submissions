@@ -31,19 +31,13 @@ def checksum(number):
         list1.append(int(listm[i]))
     for i in range(len(listn) - 1, -1, -2):
         list2.append(int(listn[i]))
-    print(list1)
-    print(list2)
-    for item in list1:
-        if (item * 2) > 9:
-            items = list(str(item * 2))
-            list1.append(items)
-        else:
-            items = item * 2
-            list1.append(items)
+
+    list1 = list(map(lambda x : x * 2, list1))
     print(list1)
     list1 = reduce(add, list1)
     list2 = reduce(add, list2)
-
+    print(list1)
+    print(list2)
     sum = list1 + list2
     print(sum)
 
