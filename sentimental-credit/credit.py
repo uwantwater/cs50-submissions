@@ -34,6 +34,8 @@ def checksum(number):
     print(list1)
     print(list2)
     list1 = list(map(lambda x : x * 2, list1))
+    for item in list1:
+        if item
     print(list1)
     list1 = reduce(add, list1)
     list2 = reduce(add, list2)
