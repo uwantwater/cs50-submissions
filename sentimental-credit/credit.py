@@ -23,8 +23,8 @@ def main():
         sys.exit("INVALID")
 
 def checksum(number):
-    listm = 
-
+    listm = number.copy()
+    listn = number.copy()
     list1 = []
     list2 = []
 
