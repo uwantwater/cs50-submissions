@@ -18,7 +18,8 @@ def main():
     file = open(argv[1], "r")
     reader = csv.DictReader(file)
     for row in reader:
-        teams[team] = int(rating)
+        team = row("team")
+        teams[team] = int(row(rating))
 
 
     counts = {}
