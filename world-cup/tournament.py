@@ -55,7 +55,7 @@ def simulate_round(teams):
 def simulate_tournament(teams):
     """Simulate a tournament. Return name of winning team."""
     winners = teams
-    for i in range(len(teams)):
+    for i in range(4):
         winners = simulate_round(winners)
         if len(winners) == 1:
             return winners[0]
