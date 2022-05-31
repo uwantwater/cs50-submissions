@@ -49,7 +49,7 @@ def checksum(number):
             items = list(map(int, items))
             list1.remove(n)
             list1 += items
-
+    print(list1)
     list1 = reduce(add, list1)
     list2 = reduce(add, list2)
 
