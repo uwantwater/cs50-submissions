@@ -1,4 +1,7 @@
 def main():
+    card_num = input("Number: ")
+    while card_num.isnumeric() == False:
+        card_num = input("Number: ")
     
 
 
