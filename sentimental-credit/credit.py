@@ -23,14 +23,16 @@ def main():
         sys.exit("INVALID")
 
 def checksum(number):
+    listm = 
+
     list1 = []
     list2 = []
 
-    for i in range(len(number) - 1, 0, -2):
-        list1.append(number[i])
-
-    for i in range(len(number), 0, -2):
-        list2.append(number[i])
+    del listm[-1]
+    for i in range(len(listm) - 1, -1, -2):
+        list1.append(listm[i])
+    for i in range(len(listn) - 1, -1, -2):
+        list2.append(listn[i])
 
     list1 = list(map(lambda x : x * 2, list1))
 
