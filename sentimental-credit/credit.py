@@ -48,7 +48,7 @@ def checksum(number):
             items = list(str(list1[pos]))
             items = list(map(int, items))
             list1.remove(n)
-            list1 = list1[0:pos+1] + items + list1[pos:len(list1)-1]
+            list1 = list1[0:pos] + items + list1[pos:len(list1)-1]
     print(list1)
     list1 = reduce(add, list1)
     list2 = reduce(add, list2)
