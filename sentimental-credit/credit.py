@@ -13,6 +13,12 @@ def main():
         card_num = num.join(card_num)
         if card_num[0] == "4":
             print("VISA")
+        elif card_num[0] == "3":
+            print("AMEX")
+        elif card_num[0] == "5":
+            print("MASTERCARD")
+        else:
+            print("INVALID")
     else:
         sys.exit("INVALID\n")
 
