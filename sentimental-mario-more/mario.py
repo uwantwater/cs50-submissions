@@ -10,8 +10,7 @@ def main():
         print(" " * (height-i), end='')
         print("#" * i, end='')
         print("  ", end='')
-        print("#" * i, end='')
-        print(" " * (height-i))
+        print("#" * i)
 
 if __name__ == '__main__':
     main()
