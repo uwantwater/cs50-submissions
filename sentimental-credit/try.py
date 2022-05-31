@@ -21,7 +21,7 @@ for n in list1:
         items = list(str(list1[pos]))
         print(items)
         list1.remove(n)
-        list1.extend(items)
+        list1.(items)
 
 print(list1)
 print(list2)
