@@ -9,6 +9,8 @@ def main():
         card_num = list(str(input("Number: ")))
 
     if checksum(card_num) == True:
+        num = ""
+        card_num = num.join(card_num)
         if 
     else:
         sys.exit("INVALID\n")
