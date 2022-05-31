@@ -10,5 +10,6 @@ for row in reader:
     count[row["team"]] = 0
 file.close()
 
+count["Uruguay"] += 1
 #print(teams)
 print(count)
