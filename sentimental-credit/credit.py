@@ -4,7 +4,7 @@ from operator import add
 
 def main():
 
-    card_num = input("Number: ")
+    card_num = list(str(input("Number: ")))
     while card_num.isnumeric() == False:
         card_num = list(str(input("Number: ")))
 
@@ -23,8 +23,8 @@ def main():
         sys.exit("INVALID")
 
 def checksum(number):
-    listm = list(map(int, number))
-    listn = list(map(int, number))
+    listm = number.copy()
+    listn = number.copy()
     list1 = []
     list2 = []
 
