@@ -24,6 +24,12 @@ def letters(text):
     l = len(re.findall("[a-zA-Z]", text))
     return l
 
+def words(text):
+    return
+
+def sentences(text):
+    return
+
 
 if __name__ == '__main__':
     main()
