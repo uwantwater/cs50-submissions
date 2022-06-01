@@ -1,4 +1,4 @@
-
+import re
 
 def main():
     inputText = input("Text: ")
@@ -21,7 +21,8 @@ def main():
         print("Grade")
 
 def letters(text):
-    
+    l = len(re.findall("[a-zA-Z]", text))
+    return l
 
 
 if __name__ == '__main__':
