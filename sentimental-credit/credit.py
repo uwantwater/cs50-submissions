@@ -48,6 +48,7 @@ def checksum(number):
             items = list(map(int, items))
             list1.remove(list1[i])
             list1 = list1[0:i] + items + list1[i:len(list1)-1]
+            i = 
     print(list1)
     list1 = reduce(add, list1)
     list2 = reduce(add, list2)
