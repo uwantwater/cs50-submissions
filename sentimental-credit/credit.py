@@ -47,8 +47,8 @@ def checksum(number):
         if list1[i] > 9:
             items += list(str(list1[i]))
             items = list(map(int, items))
-            list1.remove(list1[i])
             i = i - 1
+    
     list1 += items
     print(list1)
     list1 = reduce(add, list1)
