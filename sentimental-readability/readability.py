@@ -21,7 +21,7 @@ def main():
     elif index >= 16:
         print("Grade 16+")
     else:
-        print("Grade")
+        print(f"Grade {}")
 
 def letters(text):
     l = len(re.findall("[a-zA-Z]", text))
