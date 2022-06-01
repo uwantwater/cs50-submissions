@@ -43,11 +43,15 @@ def checksum(number):
     list1 = list(map(lambda x: x * 2, list1))
     # separates double digits to two individual digits as per the requirement of Luhn's algorithm
     items = []
-    while i < len(list1):
+    i = 0
+    n = len(list1)
+    while i < n:
         if list1[i] > 9:
             items += list(str(list1[i]))
             items = list(map(int, items))
+            list1.remove(list1[i])
             i = i - 1
+            n = len(list1)
         else:
             i = i + 1
 
