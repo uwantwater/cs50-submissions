@@ -3,7 +3,6 @@ import re
 def main():
     inputText = input("Text: ")
     l = letters(inputText)
-    print(l)
     w = words(inputText)
     s = sentences(inputText)
     # letters per hundred words
