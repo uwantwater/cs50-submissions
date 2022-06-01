@@ -3,8 +3,11 @@ import re
 def main():
     inputText = input("Text: ")
     l = letters(inputText)
+    print(l)
     w = words(inputText)
+    print(w)
     s = sentences(inputText)
+    print(s)
     # letters per hundred words
     L = l / w * 100
     # sentences per hundred words
@@ -25,8 +28,8 @@ def letters(text):
     return l
 
 def words(text):
-    w = len(re.findall("", text))
-    return 1
+    w = len(re.findall("\s", text)) + 1
+    return w
 
 def sentences(text):
     return 1
