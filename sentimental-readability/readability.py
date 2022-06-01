@@ -1,5 +1,6 @@
 import re
 
+
 def main():
     inputText = input("Text: ")
     l = letters(inputText)
@@ -20,15 +21,22 @@ def main():
     else:
         print(f"Grade {index}")
 
+
 def letters(text):
+    # using regex to return a list of alphabetical characters and
+    # counting length of list to get number of letters
     l = len(re.findall("[a-zA-Z]", text))
     return l
 
+
 def words(text):
+    # using regex to return a list of whitespaces and counting items in list for no. of words
     w = len(re.findall("\s", text)) + 1
     return w
 
+
 def sentences(text):
+    # regex returns a list of all occurences of '.', '?' and '!'. We count the items for no. of sentences
     s = len(re.findall("[.?!]", text))
     return s
 
