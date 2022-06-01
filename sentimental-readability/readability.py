@@ -3,6 +3,7 @@ import re
 def main():
     inputText = input("Text: ")
     l = letters(inputText)
+    print(l)
     w = words(inputText)
     s = sentences(inputText)
     # letters per hundred words
@@ -25,10 +26,10 @@ def letters(text):
     return l
 
 def words(text):
-    return
+    return 1
 
 def sentences(text):
-    return
+    return 1
 
 
 if __name__ == '__main__':
