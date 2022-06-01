@@ -41,10 +41,11 @@ def checksum(number):
 
     # Source : Geeks for Geeks. Multiplies every element in list by 2
     list1 = list(map(lambda x: x * 2, list1))
-    # separates double digits to two individual digits as per the requirement of Luhn's algorithm
+    # initialising variables for separating double digits to two single digits
     items = []
     i = 0
     n = len(list1)
+    # algorithm to convert double digits to two single digits
     while i < n:
         if list1[i] > 9:
             items += list(str(list1[i]))
@@ -54,7 +55,7 @@ def checksum(number):
             n = len(list1)
         else:
             i = i + 1
-
+    # now we add the converted digits to our original list
     list1 += items
     print(list1)
     list1 = reduce(add, list1)
