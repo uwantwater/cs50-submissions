@@ -25,6 +25,7 @@ def letters(text):
     return l
 
 def words(text):
+    w = len(re.findall("", text))
     return 1
 
 def sentences(text):
