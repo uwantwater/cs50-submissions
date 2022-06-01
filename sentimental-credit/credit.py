@@ -45,10 +45,10 @@ def checksum(number):
     items = []
     for i in range(len(list1)):
         if list1[i] > 9:
-            items = list(str(list1[i]))
+            items += list(str(list1[i]))
             items = list(map(int, items))
             list1.remove(list1[i])
-            
+    list1 += items
     print(list1)
     list1 = reduce(add, list1)
     list2 = reduce(add, list2)
