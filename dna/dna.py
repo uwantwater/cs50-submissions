@@ -31,7 +31,8 @@ def main():
 
     # TODO: Check database for matching profiles
     for item in database:
-        if item
+        for key, value in STRS:
+            
         print(item)
 
     file.close()
