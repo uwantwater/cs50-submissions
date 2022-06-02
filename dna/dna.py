@@ -22,8 +22,9 @@ def main():
     for key, value in strs.items():
         STRS[key] = 0
     del STRS["name"]
+    text = sequence.read()
     for key, value in STRS.items():
-        STRS[key] = longest_match(sequence.read(), key)
+        STRS[key] = longest_match(text, key)
     print(STRS)
 
 
