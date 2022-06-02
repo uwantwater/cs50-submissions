@@ -24,7 +24,7 @@ def main():
     del STRS["name"]
     for key, value in STRS.items():
         STRS[key] = longest_match(sequence.read(), key)
-    print(STRS)
+    print(sequence.read())
 
 
     # TODO: Check database for matching profiles
