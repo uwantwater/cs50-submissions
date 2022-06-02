@@ -22,7 +22,7 @@ def main():
     for key, values in strs.items():
         STRS.append(key)
     del STRS[0]
-    print(STRS)
+    
 
     # TODO: Check database for matching profiles
 
