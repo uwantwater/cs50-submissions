@@ -30,10 +30,15 @@ def main():
 
 
     # TODO: Check database for matching profiles
+    s = True
     for item in database:
-        for key, value in STRS:
-            
-        print(item)
+        for key, value in STRS.items():
+            if item[key] == STRS[key]:
+                s = True
+            else:
+                s = False
+            if s == True:
+                print(item)
 
     file.close()
     sequence.close()
