@@ -37,8 +37,8 @@ def main():
                 s = True
             else:
                 s = False
-            if s == True:
-                print(item)
+        if s == True:
+            print(item)
 
     file.close()
     sequence.close()
