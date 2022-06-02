@@ -27,7 +27,6 @@ def main():
     for key, value in STRS.items():
         STRS[key] = longest_match(text, key)
 
-
     # TODO: Check database for matching profiles
     s = True
     for item in database:
