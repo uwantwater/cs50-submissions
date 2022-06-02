@@ -18,11 +18,11 @@ def main():
     # TODO: Find longest match of each STR in DNA sequence
     reader = csv.DictReader(file)
     strs = list(reader)[0]
-    STRS = []
+    STRS = {}
     for key, values in strs.items():
-        STRS.append(key)
-    del STRS[0]
+        STRS["key"] = 0
     
+
 
     # TODO: Check database for matching profiles
 
