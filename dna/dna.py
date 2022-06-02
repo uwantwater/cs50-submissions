@@ -33,7 +33,7 @@ def main():
     s = True
     for item in database:
         for key, value in STRS.items():
-            if item[key] == STRS[key]:
+            if int(item[key]) == STRS[key]:
                 s = True
             else:
                 s = False
