@@ -32,7 +32,6 @@ def main():
 
     file.close()
     sequence.close()
-    return
 
 
 def longest_match(sequence, subsequence):
