@@ -10,21 +10,20 @@ def main():
         sys.exit(1)
 
     # TODO: Read database file into a variable
-    csv_file = open(sys.argv[1], "r")
+    file = open(sys.argv[1], "r")
 
     # TODO: Read DNA sequence file into a variable
-    text = open(sys.argv[2], "r")
+    sequence = open(sys.argv[2], "r")
 
     # TODO: Find longest match of each STR in DNA sequence
-    csv_reader = csv.DictReader(csv_file)
-    seq_reader = csv.reader(text)
+    reader = csv.DictReader(file)
     strs = list(reader)[0]
     STRS = {}
     for key, value in strs.items():
         STRS[key] = 0
     del STRS["name"]
     for key, value in STRS.items():
-        STRS[key] = longest_match(str(sequence), key)
+        STRS[key] = longest_match(sequence.read(), key)
     print(STRS)
 
 
