@@ -19,9 +19,11 @@ def main():
     reader = csv.DictReader(file)
     strs = list(reader)[0]
     STRS = {}
-    for key, values in strs.items():
+    for key, value in strs.items():
         STRS[key] = 0
     del STRS["name"]
+    for key, value in STRS.items():
+        STRS[key] = longest_match(str(sequence), key)
     print(STRS)
 
 
