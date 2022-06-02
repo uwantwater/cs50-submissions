@@ -29,8 +29,9 @@ def main():
 
 
     # TODO: Check database for matching profiles
-    for row in reader:
-        print(row)
+    database = list(reader)
+    for item in database:
+        print(item)
 
     file.close()
     sequence.close()
