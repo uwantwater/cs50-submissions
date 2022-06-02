@@ -37,6 +37,7 @@ def main():
                 s = True
             else:
                 s = False
+                break
         if s == True:
             print(item)
 
