@@ -31,6 +31,7 @@ def main():
 
     # TODO: Check database for matching profiles
     for item in database:
+        if item
         print(item)
 
     file.close()
