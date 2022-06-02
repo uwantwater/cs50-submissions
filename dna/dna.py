@@ -20,8 +20,9 @@ def main():
     strs = list(reader)[0]
     STRS = {}
     for key, values in strs.items():
-        STRS["key"] = 0
-    
+        STRS[key] = 0
+    del STRS["name"]
+    print(STRS)
 
 
     # TODO: Check database for matching profiles
