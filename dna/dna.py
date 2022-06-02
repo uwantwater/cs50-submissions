@@ -39,6 +39,8 @@ def main():
                 break
         if s == True:
             print(item['name'])
+            file.close()
+            sequence.close()
             sys.exit(0)
     print("No match")
 
