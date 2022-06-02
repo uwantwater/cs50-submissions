@@ -25,6 +25,7 @@ def main():
     for key, value in STRS.items():
         STRS[key] = longest_match(sequence.read(), key)
     print(sequence.read())
+    print(STRS)
 
 
     # TODO: Check database for matching profiles
