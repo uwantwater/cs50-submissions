@@ -9,3 +9,4 @@ SELECT * FROM airports WHERE city="Fiftyville"; --to get id of fiftyville airpor
 SELECT id, name, passport_number FROM people WHERE passport_number IN (SELECT passport_number FROM passengers JOIN flights on flights.id=passengers.flight_id WHERE year=2021 AND month=7 AND day=29 AND origin_airport_id=8) ORDER BY name; --sus people amog us 4 :(
 SELECT id FROM flights WHERE year=2021 AND month=7 AND day=29 AND origin_airport_id=8 LIMIT 1; --first flight out of fiftyville
 SELECT id, name, passport_number FROM people WHERE passport_number IN (SELECT passport_number FROM passengers WHERE flight_id=18); --who tf took the first flight out of fiftyville
+SELECT * FROM people WHERE id=686048; --details of bruse who took the first flight
