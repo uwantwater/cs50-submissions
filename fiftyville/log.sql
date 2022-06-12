@@ -4,3 +4,4 @@ SELECT * FROM interviews WHERE year=2021 AND month=7 AND day=28; --to review the
 SELECT * FROM bakery_security_logs WHERE year=2021 AND month=7 AND day=28 AND hour=10 AND minute BETWEEN 15 AND 25; --first witness mentions car leaving within 10 minutes after theft
 SELECT name, passport_number FROM people WHERE license_plate IN (SELECT license_plate FROM bakery_security_logs WHERE year=2021 AND month=7 AND day=28 AND hour=10 AND minute BETWEEN 15 AND 25); --suspects1
 SELECT id, name FROM people WHERE id IN (SELECT person_id FROM bank_accounts JOIN atm_transactions ON bank_accounts.account_number=atm_transactions.account_number WHERE year=2021 AND transaction_type="withdraw"); --suspects2
+SELECT id, name, passport_number FROM people WHERE phone_number IN (SELECT phone_number FROM phone_calls WHERE year=2021 AND month=7 AND day=28 AND duration<60) ORDER BY name; --sus people bahahhaajajaj
