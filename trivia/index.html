@@ -6,10 +6,13 @@
         <link href="styles.css" rel="stylesheet">
         <title>Trivia!</title>
         <script>
-            function mcq()
-            {
 
-            }
+            document.addEventListener("DOMContentLoaded", function() {
+                let correct = document.querySelector(".correct");
+                correct.addEventListener("click", function() {
+                    correct.style.backgroundColor = "green";
+                });
+            });
         </script>
     </head>
     <body>
