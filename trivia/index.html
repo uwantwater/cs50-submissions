@@ -5,17 +5,31 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
         <title>Trivia!</title>
+
+
         <script>
 
             function check() {
                 answer = document.querySelector('#check').value;
                 if (answer.toLowerCase() = 'switzerland')
                 {
-                    document.querySelector('input').
+                    document.querySelector('input').style.backgroundColor = 'green';
+                    document.querySelector('#part2').innerHTML = 'Correct!';
+                }
+                else
+                {
+                    document.querySelector('input').style.backgroundColor = 'red';
+                    document.querySelector('#part2').innerHTML = 'Incorrect!';
                 }
             }
 
+            function buttons() {
+                
+            }
+
         </script>
+
+
     </head>
     <body>
         <div class="header">
