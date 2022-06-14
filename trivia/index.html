@@ -13,12 +13,13 @@
                     correct.style.backgroundColor = "green";
                     document.querySelector("part1").innerHTML="Correct!";
                 });
-                for (let i=0; i<)
-                let incorrect = document.querySelectorAll(".incorrect");
-                incorrect.addEventListener("click", function() {
-                    incorrect.style.backgroundColor = "red";
-                    document.querySelector("part1").innerHTML="Inorrect!";
+                let incorrects = document.querySelectorAll(".incorrect");
+                for (let i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener("click", function() {
+                        incorrects[i].style.backgroundColor = "red";
+                        document.querySelector("part1").innerHTML="Inorrect!";
                 });
+                }
             });
         </script>
     </head>
