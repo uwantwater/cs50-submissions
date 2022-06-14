@@ -32,7 +32,7 @@ for (let i = 0; i < incorrects.length; i++) {
 //check free response submission
 document.querySelector('#check').addEventListener('click', function () {
     let input = document.querySelector('input');
-    if (input.value === 'Switzerland') {
+    if (input.value.toLowerCase === 'switzerland') {
         input.style.backgroundColor = 'green';
         document.querySelector('#feedback2').innerHTML = 'Correct!';
     } else {
