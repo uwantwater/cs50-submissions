@@ -22,18 +22,18 @@
                         document.querySelector("#part1").innerHTML="Inorrect!";
                 });
                 }
+            });
 
-                document.querySelector("#check", function() {
-                    let input = document.querySelector("input");
-                    if (input.value == 'Switzerland') {
-                        input.style.backgroundColor = 'green';
-                        document.querySelector('#part2').innerHTML = 'Correct!';
-                    }
-                    else {
-                        input.style.backgroundColor = 'red';
-                        document.querySelector('part2').innerHTML = 'Incorrect!';
-                    }
-                });
+            document.querySelector("#check", function() {
+                let input = document.querySelector("input");
+                if (input.value == 'Switzerland') {
+                    input.style.backgroundColor = 'green';
+                    document.querySelector('#part2').innerHTML = 'Correct!';
+                }
+                else {
+                    input.style.backgroundColor = 'red';
+                    document.querySelector('part2').innerHTML = 'Incorrect!';
+                }
             });
 
         </script>
