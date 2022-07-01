@@ -36,13 +36,16 @@
 
                 function greet()
                 {
+                    let alertPlaceholder = document.getElementById("liveAlert");
                     let name = document.querySelector('#name').value;
                     var wrapper = document.createElement('div');
                     wrapper.innerHTML = '<div class="alert alert-success alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+                    alertPlaceholder.append(wrapper);
                 }
 
                 document.querySelector('form').addEventListener('submit', greet);
 
         </script>
+        <div id="liveAlert"></div>
     </body>
 </html>
