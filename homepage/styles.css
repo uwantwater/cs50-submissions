@@ -27,11 +27,16 @@ body {
 .submit {
     background-color: #AAAAAA;
     color: white;
-    border-width: 1px;
+    border: none;
     border-radius: 10px;
     font-size: 20px;
+    transition: 0.5s;
 }
 
 .submit:hover {
     background-color: green;
+}
+
+form {
+    margin: auto;
 }
