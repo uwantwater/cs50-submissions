@@ -35,9 +35,9 @@ body {
 }
 
 .submit:hover {
-    background-color: #0072a0;
+    background-color: #007bff;
 }
 
-form {
+div {
     margin: auto;
 }
