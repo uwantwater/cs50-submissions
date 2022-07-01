@@ -27,6 +27,9 @@ body {
 .submit {
     background-color: #AAAAAA;
     color: white;
+    border-width: 1px;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
 .submit:hover {
