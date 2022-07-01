@@ -25,6 +25,10 @@ body {
 }
 
 .submit {
-    background-color: gray;
+    background-color: #AAAAAA;
     color: white;
+}
+
+.submit:hover {
+    background-color: blue;
 }
