@@ -32,13 +32,13 @@
             <br>
             <input type="submit" class="submit">
         </form>
-        <div class="alert alert-success" id="alert-message" role="alert"></div>
         <script>
 
                 function greet()
                 {
                     let name = document.querySelector('#name').value;
-                    document.getElementById("alert-message").innerHTML = "Hello " + name + ", your message was sent to Aradhya.";
+                    var wrapper = document.createElement('div');
+                    wrapper.innerHTML = '<div class="alert alert-success alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
                 }
 
                 document.querySelector('form').addEventListener('submit', greet);
