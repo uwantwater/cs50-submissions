@@ -6,33 +6,47 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <link href="styles.css" rel="stylesheet">
         <title>Aradhya's Webpage</title>
+
+    </head>
+
+    <div id="liveAlert"></div>
+
+    <body>
         <hr>
+
         <nav class="nav nav-pills flex-column flex-sm-row">
             <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Introduction</a>
             <a class="flex-sm-fill text-sm-center nav-link" href="interests.html">My Interests</a>
             <a class="flex-sm-fill text-sm-center nav-link" href="hobbies.html">My Hobbies</a>
             <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Contact</a>
         </nav>
+
         <hr>
         <br>
-    </head>
-    <div id="liveAlert"></div>
-    <body>
+
         <form id="contact" onsubmit="return false;">
+
             <fieldset>
                 <legend>Your name</legend>
                 <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
             </fieldset>
+
             <br>
+
             <fieldset>
                 <legend>Email</legend>
                 <input type="email" placeholder="E-mail address" size="50">
             </fieldset>
+
             <br>
+
             <textarea form="contact" rows="4" cols="70">Enter your message to me here...</textarea><br>
+
             <br>
+            
             <input type="submit" class="submit">
         </form>
+
         <script>
 
                 function greet()
