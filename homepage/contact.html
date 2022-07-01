@@ -32,12 +32,13 @@
             <br>
             <input type="submit" class="submit">
         </form>
+        <div id="alert-message"></div>
         <script>
 
                 function greet()
                 {
                     let name = document.querySelector('#name').value;
-                    alert('hello, ' + name);
+                    document.getElementById("alert-message").innerHTML = 
                 }
 
                 document.querySelector('form').addEventListener('submit', greet);
