@@ -23,3 +23,8 @@ ol {
 body {
     padding:20px;
 }
+
+.submit {
+    background-color: blue;
+    color: white;
+}
