@@ -112,9 +112,10 @@ def logout():
 def quote():
     symbol = request.form.get("symbol")
 
-    if not symbol:
+    if lookup(symbol) == None:
         return apology("invalid symbol", 69)
     else:
+        quote = lookup(symbol)
         
     return render_template("quote.html")
 
