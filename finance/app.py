@@ -118,7 +118,7 @@ def quote():
 def register():
     """Register user"""
     if not request.form.get("username"):
-        return apology("")
+        return apology("must provide username", 403)
     return render_template("register.html")
 
 
