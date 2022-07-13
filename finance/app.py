@@ -122,7 +122,7 @@ def register():
             return apology("must provide username", 403)
         elif not request.form.get("password"):
             return apology("must provide password", 403)
-
+        
     return render_template("register.html")
 
 
