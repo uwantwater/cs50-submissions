@@ -128,7 +128,7 @@ def register():
         elif request.form.get("password") != request.form.get("confirmation"):
             return apology("passwords do not match", 403)
         else:
-            
+            db.execute("INSERT INTO users (username, hash) VALUES(?, ?, ?)", )
 
     return render_template("register.html")
 
