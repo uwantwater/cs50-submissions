@@ -50,7 +50,15 @@ def index():
 @login_required
 def buy():
     """Buy shares of stock"""
-    return apology("TODO")
+    symbol = request.form.get("symbol")
+    if request.method == 'POST':
+        if lookup(symbol) == None:
+            return apology("invalid symbol", 69)
+        else:
+            quoted = lookup(symbol)
+            name = quoted["name"]
+            price = quoted["price"]
+    return render_template("buy.html")
 
 
 @app.route("/history")
