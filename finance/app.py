@@ -111,11 +111,11 @@ def logout():
 @login_required
 def quote():
     symbol = request.form.get("symbol")
-
-    if lookup(symbol) == None:
-        return apology("invalid symbol", 69)
-    else:
-        quoted = lookup(symbol)
+    if request.method == 'POST':
+        if lookup(symbol) == None:
+            return apology("invalid symbol", 69)
+        else:
+            quoted = lookup(symbol)
 
     return render_template("quote.html")
 
