@@ -131,7 +131,7 @@ def register():
             db.execute("INSERT INTO users (username, hash) VALUES(?, ?, ?)", request.form.get("username"), generate_password_hash(request.form.get("password")))
             return redirect("/login")
 
-    return redirect("/register")
+    return render_template("register.html")
 
 
 @app.route("/sell", methods=["GET", "POST"])
