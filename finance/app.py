@@ -130,7 +130,7 @@ def register():
         else:
             db.execute("INSERT INTO users (username, hash) VALUES(?, ?, ?)", request.form.get("username"), generate_password_hash(request.form.get("password")))
 
-    return redirect("/")
+        return redirect("/")
 
 
 @app.route("/sell", methods=["GET", "POST"])
