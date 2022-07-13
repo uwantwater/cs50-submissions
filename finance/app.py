@@ -119,7 +119,6 @@ def quote():
             name = quoted["name"]
             price = quoted["price"]
             return render_template("quoted.html", name = name, symbol = symbol, price = price)
-
     return render_template("quote.html")
 
 
