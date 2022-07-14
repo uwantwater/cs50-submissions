@@ -55,8 +55,6 @@ def buy():
     if request.method == 'POST':
         if lookup(symbol) == None:
             return apology("invalid symbol", 69)
-        elif shares <= 0:
-            return apology("please enter valid amount of shares", 403)
         else:
             share = lookup(symbol)
             name = share["name"]
