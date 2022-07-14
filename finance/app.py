@@ -61,8 +61,8 @@ def buy():
             share = lookup(symbol)
             name = share["name"]
             price = share["price"]
-            
-            return render_template("buy.html")
+
+            return redirect("/")
     return render_template("buy.html")
 
 
