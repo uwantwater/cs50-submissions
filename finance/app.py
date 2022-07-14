@@ -61,7 +61,7 @@ def buy():
             share = lookup(symbol)
             name = share["name"]
             price = share["price"]
-
+            
             return render_template("buy.html")
     return render_template("buy.html")
 
@@ -92,7 +92,8 @@ def login():
             return apology("must provide password", 403)
 
         # Query database for username
-        rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
+        rows = db.execute("SELECT * FROM users WHERE username = ?",
+                          request.form.get("username"))
 
         # Ensure username exists and password is correct
         if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("password")):
@@ -120,7 +121,19 @@ def logout():
     return redirect("/")
 
 
-#
+@app.route("/quote", methods=["GET", "POST"])
+@login_required
+def quote():
+    symbol = request.form.get("symbol")
+    if request.method == 'POST':
+        if lookup(symbol) == None:
+            return apology("invalid symbol", 69)
+        else:
+            quoted = lookup(symbol)
+            name = quoted["name"]
+            price = quoted["price"]
+            return render_template("quoted.html", name=name, symbol=symbol, price=price)
+    return render_template("quote.html")
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -138,7 +151,8 @@ def register():
             return apology("passwords do not match", 403)
         else:
             hash = generate_password_hash(request.form.get("password"))
-            db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", request.form.get("username"), hash)
+            db.execute("INSERT INTO users (username, hash) VALUES(?, ?)",
+                       request.form.get("username"), hash)
             return redirect("/")
 
     return render_template("register.html")
