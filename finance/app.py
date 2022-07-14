@@ -58,9 +58,10 @@ def buy():
         elif shares <= 0:
             return apology("please enter valid amount of shares", 403)
         else:
-            quoted = lookup(symbol)
-            name = quoted["name"]
-            price = quoted["price"]
+            share = lookup(symbol)
+            name = share["name"]
+            price = share["price"]
+            return render_template("buy.html")
     return render_template("buy.html")
 
 
