@@ -59,7 +59,7 @@ def buy():
             share = lookup(symbol)
             name = share["name"]
             price = share["price"]
-            db.execute("SELECT")
+            
             return redirect("/")
     return render_template("buy.html")
 
