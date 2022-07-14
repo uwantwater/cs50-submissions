@@ -60,7 +60,7 @@ def buy():
             name = share["name"]
             price = share["price"]
             transactions = db.execute("SELECT * FROM transactions")
-            if session["user_id"] in transations.user_id and 
+            
             return redirect("/")
     return render_template("buy.html")
 
