@@ -51,7 +51,7 @@ def index():
 def buy():
     """Buy shares of stock"""
     symbol = request.form.get("symbol")
-    shares = request.form.get("shares")
+    shares = int(request.form.get("shares"))
     if request.method == 'POST':
         if lookup(symbol) == None:
             return apology("invalid symbol", 69)
@@ -59,7 +59,7 @@ def buy():
             share = lookup(symbol)
             name = share["name"]
             price = share["price"]
-
+            db.execute("SELECT")
             return redirect("/")
     return render_template("buy.html")
 
