@@ -61,6 +61,7 @@ def buy():
             share = lookup(symbol)
             name = share["name"]
             price = share["price"]
+
             return render_template("buy.html")
     return render_template("buy.html")
 
@@ -119,19 +120,7 @@ def logout():
     return redirect("/")
 
 
-@app.route("/quote", methods=["GET", "POST"])
-@login_required
-def quote():
-    symbol = request.form.get("symbol")
-    if request.method == 'POST':
-        if lookup(symbol) == None:
-            return apology("invalid symbol", 69)
-        else:
-            quoted = lookup(symbol)
-            name = quoted["name"]
-            price = quoted["price"]
-            return render_template("quoted.html", name = name, symbol = symbol, price = price)
-    return render_template("quote.html")
+#
 
 
 @app.route("/register", methods=["GET", "POST"])
