@@ -59,7 +59,8 @@ def buy():
             share = lookup(symbol)
             name = share["name"]
             price = share["price"]
-            db.execute("INSERT INTO transactions (stock_name, stock_symbol, stock_price, );")
+            db.execute("INSERT INTO transactions (stock_symbol, stock_price, shares, user_id, type) VALUES(?, ?, ?, ?, ?);", symbol, price, shares, session["user_id"], "buy")
+            db.execute("")
             return redirect("/")
     return render_template("buy.html")
 
